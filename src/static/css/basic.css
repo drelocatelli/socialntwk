@@ -14,10 +14,10 @@ body {
 
 .ui.menu {
     margin-bottom: 0;
+    zoom: 1.6;
 }
 
 .ui.segment {
-    flex-grow: 1;
     /* background:transparent; */
     /* box-shadow: none; */
     margin: 0;
@@ -30,6 +30,6 @@ body {
 webview {
     position: fixed;
 	width: 100%;
-	height: 100%;
+	height: -webkit-fill-available;
     background: #333;
 }

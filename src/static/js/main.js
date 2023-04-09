@@ -13,10 +13,23 @@ const networks = [
         title: 'Outlook',
         url: 'https://outlook.com/',
     },
+    {
+        title: 'Instagram',
+        url: 'http://instagram.com'
+    }
 ];
 
 const activeMenu$ = new BehaviorSubject(0);
-const webview = document.querySelector('webview');
+// add webviews
+for(let i = 0; i < networks.length; i++) {
+    const webviewEl = document.createElement('webview');
+    webviewEl.src = networks[i].url;
+    webviewEl.id = i;
+    webviewEl.style.display = 'none';
+    document.querySelector('.container').appendChild(webviewEl);    
+}
+
+const webviews = document.querySelectorAll('webview');
 
 class Menu {
 
@@ -47,8 +60,7 @@ class Menu {
             link.innerText = network.title;
             link.dataset.url = network.url;
             menu.appendChild(link);
-            link.addEventListener('click', (e) => {
-                const { target } = e;
+            link.addEventListener('click', () => {
                 activeMenu$.next(i);
             });
         }
@@ -56,7 +68,13 @@ class Menu {
 
     setUrl(idx) {
         const newURL = networks[idx].url;
-        webview.loadURL(newURL);
+        for(let [i, webview] of webviews.entries()) {
+            if(i == idx) {
+                webview.style.display = 'flex';
+            } else {
+                webview.style.display = 'none';
+            }
+        }
     }
 }
 
