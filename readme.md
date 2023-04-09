@@ -1,5 +1,5 @@
 # Social Media Setup
-Find `resources/app/src/static/js/main.js` file then update "networks" JSON.
+Find `networks.json` file then update "networks" JSON.
 
 ```
 const networks = [
