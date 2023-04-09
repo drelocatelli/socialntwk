@@ -6,7 +6,6 @@ class App {
         app.whenReady().then(() => {
             const menu = Menu.buildFromTemplate([]);
             const win = this.init();
-            console.log(Menu.getApplicationMenu())
             // win.setMenu(menu);
             win.maximize();
             globalShortcut.register('cmdOrCtrl + J', () => win.webContents.toggleDevTools());
