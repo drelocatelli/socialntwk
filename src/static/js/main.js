@@ -1,27 +1,6 @@
 const { BehaviorSubject } = rxjs;
 
-const networks = [
-    {
-        title: 'Whatsapp',
-        url: 'https://web.whatsapp.com/',
-    },
-    {
-        title: 'Telegram',
-        url: 'https://web.telegram.org/',
-    },
-    {
-        title: 'Outlook',
-        url: 'https://outlook.com/',
-    },
-    {
-        title: 'Instagram',
-        url: 'http://instagram.com'
-    },
-    {
-        title: 'Notion',
-        url: 'https://www.notion.so/'
-    }
-];
+const {networks} = JSON.parse(api.networks());
 
 const activeMenu$ = new BehaviorSubject(0);
 // add webviews
