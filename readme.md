@@ -2,28 +2,30 @@
 Find `networks.json` file then update "networks" JSON.
 
 ```
-const networks = [
-    {
-        title: 'Whatsapp',
-        url: 'https://web.whatsapp.com/',
-    },
-    {
-        title: 'Telegram',
-        url: 'https://web.telegram.org/',
-    },
-    {
-        title: 'Outlook',
-        url: 'https://outlook.com/',
-    },
-    {
-        title: 'Instagram',
-        url: 'http://instagram.com'
-    },
-    {
-        title: 'Notion',
-        url: 'https://www.notion.so/'
-    }
-];
+{
+    "networks": [
+        {
+            "title": "Whatsapp",
+            "url": "https://web.whatsapp.com/"
+        },
+        {
+            "title": "Telegram",
+            "url": "https://web.telegram.org/"
+        },
+        {
+            "title": "Outlook",
+            "url": "https://outlook.com/"
+        },
+        {
+            "title": "Instagram",
+            "url": "http://instagram.com"
+        },
+        {
+            "title": "Notion",
+            "url": "https://www.notion.so/"
+        }
+    ]
+}
 
 ```
 
