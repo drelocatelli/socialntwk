@@ -1,0 +1,31 @@
+{
+  "name": "socialntwk",
+  "version": "1.0.0",
+  "description": "",
+  "type": "commonjs",
+  "main": "src/scripts/main.js",
+  "scripts": {
+    "dev": "concurrently \"npm run watch\" \"sleep 3 && npm run start\" --wait",
+    "watch": "tsc -w",
+    "build:ts": "tsc",
+    "build": "electron-packager . --out=build",
+    "build:windows": "electron-packager . --platform=win32 --arch=x64 --out=build",
+    "start": "electronmon .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/electron": "^1.6.10",
+    "@types/node": "^18.15.11",
+    "chokidar": "^3.5.3",
+    "concurrently": "^8.0.1",
+    "electron": "^24.0.0",
+    "electron-packager": "^17.1.1",
+    "electronmon": "^2.0.2",
+    "socket.io": "^4.6.1",
+    "typescript": "^5.0.4",
+    "wait-on": "^7.0.1"
+  }
+}

@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "module": "CommonJS",
+        "moduleResolution": "node",
+        "outDir": "src/scripts",
+        "sourceMap": true,
+        "esModuleInterop": false,
+        "types": ["node", "electron"]
+    },
+    "include": ["src/**/*"],
+    "exclude": ["node_modules"]
+}

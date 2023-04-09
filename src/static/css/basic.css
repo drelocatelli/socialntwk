@@ -1,0 +1,35 @@
+body {
+    background-color: #f9f9f9;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.container {
+    position: relative;
+}
+
+.ui.menu {
+    margin-bottom: 0;
+}
+
+.ui.segment {
+    flex-grow: 1;
+    /* background:transparent; */
+    /* box-shadow: none; */
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    border: none;
+    overflow-y: auto;
+}
+
+webview {
+    position: fixed;
+	width: 100%;
+	height: 100%;
+    background: #333;
+}
