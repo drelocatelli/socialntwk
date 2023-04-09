@@ -16,6 +16,10 @@ const networks = [
     {
         title: 'Instagram',
         url: 'http://instagram.com'
+    },
+    {
+        title: 'Notion',
+        url: 'https://www.notion.so/'
     }
 ];
 
@@ -26,6 +30,8 @@ for(let i = 0; i < networks.length; i++) {
     webviewEl.src = networks[i].url;
     webviewEl.id = i;
     webviewEl.style.display = 'none';
+    webviewEl.setAttribute('webPreferences', "nativeWindowOpen=true");
+    webviewEl.setAttribute('allowpopups', true);
     document.querySelector('.container').appendChild(webviewEl);    
 }
 
