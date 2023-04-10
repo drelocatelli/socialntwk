@@ -18,11 +18,18 @@ body {
     overflow-x: auto;
     overflow-y: hidden;
     scroll-behavior: smooth;
-    /* scroll-snap-type: x mandatory; */
+    height: 53px;
 }
 
-.ui.menu a {
-    /* scroll-snap-align: start; */
+.ui.menu a.item {
+    height: 43px;
+    font-family: serif;
+    /* box-shadow: 0px -2px 12px #00000061; */
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.ui.menu a.item.active {
+    box-shadow: inset 0px 8px 13px #ccccccc4;
 }
 
 .ui.menu::-webkit-scrollbar {
@@ -40,6 +47,8 @@ body {
 .ui.segment {
     /* background:transparent; */
     /* box-shadow: none; */
+    position: relative;
+    top: -15px;
     margin: 0;
     padding: 0;
     border-radius: 0;
