@@ -30,4 +30,4 @@ Find `networks.json` file then update "networks" JSON.
 ```
 
 
-![image](https://user-images.githubusercontent.com/32282846/230788944-a5d64eb4-e3b7-436a-a280-02d4ccfca7a9.png)
+![image](https://user-images.githubusercontent.com/32282846/231010154-6d7bcd22-e364-48d6-bd28-d7abeefba75c.png)
