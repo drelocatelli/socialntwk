@@ -8,8 +8,8 @@
     "dev": "concurrently \"npm run watch\" \"sleep 3 && npm run start\" --wait",
     "watch": "tsc -w",
     "build:ts": "tsc",
-    "build": "electron-packager . --out=build",
-    "build:windows": "electron-packager . --platform=win32 --arch=x64 --out=build",
+    "build": "npm run build:ts && electron-packager . --out=build",
+    "build:windows": "npm run build:ts && electron-packager . --platform=win32 --arch=x64 --out=build",
     "start": "electronmon .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

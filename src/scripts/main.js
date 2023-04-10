@@ -14,7 +14,6 @@ class App {
     }
     init() {
         const win = new BrowserWindow({
-            alwaysOnTop: true,
             webPreferences: {
                 nodeIntegration: true,
                 webviewTag: true,

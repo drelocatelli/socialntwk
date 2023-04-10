@@ -15,7 +15,6 @@ class App {
 
     init(): Electron.CrossProcessExports.BrowserWindow {
         const win = new BrowserWindow({
-            alwaysOnTop: true,
             webPreferences: {
                 nodeIntegration: true,
                 webviewTag: true,
