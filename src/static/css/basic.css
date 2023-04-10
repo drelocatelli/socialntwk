@@ -15,6 +15,26 @@ body {
 .ui.menu {
     margin-bottom: 0;
     zoom: 1.6;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    /* scroll-snap-type: x mandatory; */
+}
+
+.ui.menu a {
+    /* scroll-snap-align: start; */
+}
+
+.ui.menu::-webkit-scrollbar {
+    height: 3px;
+}
+.ui.menu::-webkit-scrollbar-track {
+    border: none;
+    background: #888;
+}
+
+.ui.menu::-webkit-scrollbar-thumb {
+    background: #333; 
 }
 
 .ui.segment {

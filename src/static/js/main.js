@@ -24,6 +24,11 @@ class Menu {
 
     getMenu() {
         const menu = document.querySelector('.ui.pointing.menu');
+        // horizontal scroll
+        menu.addEventListener('wheel', (e) => {
+            e.preventDefault();
+            menu.scrollLeft += e.deltaY;
+        })
         return menu;
     }
 
