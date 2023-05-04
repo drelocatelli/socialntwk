@@ -1,5 +1,7 @@
 # Social Media Setup
-Find `networks.json` file then update "networks" JSON.
+
+## How to edit networks
+Find `networks.json` file, update "networks" JSON, then press CTRL + R.
 
 ```
 {
