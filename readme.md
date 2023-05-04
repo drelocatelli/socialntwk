@@ -1,7 +1,7 @@
 # Social Media Setup
 
 ## How to edit networks
-Find `networks.json` file, update "networks" JSON, then press CTRL + R.
+Find `networks.json` file, update "networks" JSON, then press CTRL + R in app, to reload.
 
 ```
 {
