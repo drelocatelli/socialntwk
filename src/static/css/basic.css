@@ -13,17 +13,17 @@ body {
 }
 
 .ui.menu {
-    margin-bottom: 0;
     zoom: 1.6;
     overflow-x: auto;
     overflow-y: hidden;
     scroll-behavior: smooth;
-    height: 53px;
+    height: 32px;
 }
 
 .ui.menu a.item {
-    height: 43px;
-    font-family: serif;
+    height: 32px;
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     /* box-shadow: 0px -2px 12px #00000061; */
     border-bottom: 1px solid #e5e5e5;
 }
@@ -48,7 +48,7 @@ body {
     /* background:transparent; */
     /* box-shadow: none; */
     position: relative;
-    top: -15px;
+    top: -34px;
     margin: 0;
     padding: 0;
     border-radius: 0;
